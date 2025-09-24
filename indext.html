@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul Nilai-Nilai ASN BerAKHLAK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Balsamiq+Sans:wght@400;700&display=swap');
+        body {
+            font-family: 'Balsamiq Sans', cursive;
+            background-color: #fce7f3;
+            background-image: radial-gradient(#fff1f2, #fbcfe8);
+            padding: 2rem;
+        }
+        .header-title {
+            background: linear-gradient(135deg, #f0abfc, #a78bfa);
+            color: white;
+            padding: 3rem;
+            border-radius: 2rem;
+            text-align: center;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+            margin-bottom: 2rem;
+        }
+        .card-grid {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        .content-card {
+            padding: 2rem;
+            border-radius: 1.5rem;
+            background-color: white;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeIn 1s ease-in-out;
+            border: 2px solid transparent;
+            position: relative;
+        }
+        .content-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 1.5rem;
+            padding: 2px;
+            background: linear-gradient(135deg, #a78bfa, #c4b5fd);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+        .content-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        .content-card:hover::before {
+            opacity: 1;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .card-icon {
+            width: 3.5rem;
+            height: 3.5rem;
+            background: linear-gradient(45deg, #a78bfa, #c4b5fd);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        .card-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .pixel-art-icon {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body class="p-8">
+
+    <div class="header-title">
+        <h1 class="text-4xl sm:text-5xl font-extrabold mb-2">Modul Nilai ASN</h1>
+        <p class="text-xl sm:text-2xl font-light">Panduan Praktis BerAKHLAK</p>
+    </div>
+
+    <div class="card-grid">
+
+        <div class="content-card" style="animation-delay: 0.1s;">
+            <div class="card-title">
+                <div class="card-icon">
+                     <img src="https://placehold.co/50x50/A78BFA/FFFFFF?text=💖" class="pixel-art-icon">
+                </div>
+                <h2 class="text-2xl font-bold text-violet-800">Berorientasi Pelayanan</h2>
+            </div>
+            <p class="text-gray-700 mt-4 leading-relaxed text-sm text-center">Nilai **Berorientasi Pelayanan** adalah komitmen tulus untuk memberikan layanan terbaik. **Contoh:** Seorang ASN BPS yang bersedia bekerja lembur demi menyelesaikan tugas survei yang mendesak menunjukkan dedikasi tinggi, melebihi ekspektasi waktu normal.</p>
+        </div>
+
+        <div class="content-card" style="animation-delay: 0.2s;">
+            <div class="card-title">
+                <div class="card-icon">
+                    <img src="https://placehold.co/50x50/A78BFA/FFFFFF?text=🛡️" class="pixel-art-icon">
+                </div>
+                <h2 class="text-2xl font-bold text-violet-800">Akuntabel</h2>
+            </div>
+            <p class="text-gray-700 mt-4 leading-relaxed text-sm text-center">Nilai **Akuntabel** adalah sikap bertanggung jawab dan transparan. **Contoh:** Sesuai Surat Edaran BKN, proses penerbitan KARIS/KARSU kini menggunakan format virtual. Inovasi ini adalah bukti **efisiensi** yang berlandaskan nilai akuntabel.</p>
+        </div>
+
+        <div class="content-card" style="animation-delay: 0.3s;">
+            <div class="card-title">
+                <div class="card-icon">
+                    <img src="https://placehold.co/50x50/A78BFA/FFFFFF?text=🧠" class="pixel-art-icon">
+                </div>
+                <h2 class="text-2xl font-bold text-violet-800">Kompeten</h2>
+            </div>
+            <p class="text-gray-700 mt-4 leading-relaxed text-sm text-center">Nilai **Kompeten** adalah kemampuan untuk terus belajar dan berinovasi. **Contoh:** Seorang ASN yang proaktif mencari tahu tentang peraturan terbaru tentang Tunjangan Kinerja Plt. menunjukkan inisiatif untuk selalu **adaptif** dan relevan dengan perubahan kebijakan.</p>
+        </div>
+
+        <div class="content-card" style="animation-delay: 0.4s;">
+            <div class="card-title">
+                <div class="card-icon">
+                    <img src="https://placehold.co/50x50/A78BFA/FFFFFF?text=👑" class="pixel-art-icon">
+                </div>
+                <h2 class="text-2xl font-bold text-violet-800">Loyal</h2>
+            </div>
+            <p class="text-gray-700 mt-4 leading-relaxed text-sm text-center">Nilai **Loyal** adalah sikap setia kepada Pancasila, UUD 1945, NKRI, dan pemerintah. **Contoh:** Patuh pada peraturan dan etika profesi serta menghindari konflik kepentingan adalah wujud nyata dari nilai ini.</p>
+        </div>
+
+        <div class="content-card" style="animation-delay: 0.5s;">
+            <div class="card-title">
+                <div class="card-icon">
+                    <img src="https://placehold.co/50x50/A78BFA/FFFFFF?text=🤝" class="pixel-art-icon">
+                </div>
+                <h2 class="text-2xl font-bold text-violet-800">Harmonis</h2>
+            </div>
+            <p class="text-gray-700 mt-4 leading-relaxed text-sm text-center">Nilai **Harmonis** adalah peduli dan menghargai perbedaan. **Contoh:** Bersedia membantu rekan kerja yang sedang lembur menunjukkan sikap harmonis, menciptakan lingkungan kerja yang positif dan suportif.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
